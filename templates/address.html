@@ -3,10 +3,25 @@
 {% block content %}
 <div class="content" style="margin-top:120px;">
     <section id="top-cards">
-  <div class="container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card mb-5 no-border" style="width: 100%; background:linear-gradient(#00b2ff, #75d2fd)">
+                        <div class="card-body">
+                            <h5 class="card-title ml-2" style="color:white;"><strong>Explore Bidao</strong></h5>
+                            <nav class="navbar navbar-light">
+                                <form class="form-inline w-100">
+                                    <input class="form-control w-100 mb-2" type="search" placeholder="Address, TxID" aria-label="Search">
+                                    <button class="btn btn-primary my-2 my-sm-0 w-100 mt-1" type="submit"><i class="fas fa-search"></i> Search</button>
+                                </form>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
     <div class="row">
       <div class=" col-12">
-        <div class="card featured-card shadow-sm no-border">
+        <div class="card featured-card shadow-sm">
           <div class="card-body border-card-body">
 <p class="top-card-heading"><i class="fas fa-clipboard-check"></i>
 	      General Info 0x854767934678346789246467046246456</p>
@@ -36,7 +51,7 @@
   <div class="container">
     <div class="row">
       <div class=" col-12">
-        <div class="card featured-card shadow-sm no-border">
+        <div class="card featured-card shadow-sm">
           <div class="card-body border-card-body">
 <p class="top-card-heading"><i class="fas fa-info-circle"></i>
 	      Incoming Transactions</p>
@@ -83,11 +98,11 @@
   </section>
 
 
-    <section id="top-cards" style="margin-top:20px">
+    <section id="top-cards" style="margin-top:20px" class="pb-5">
   <div class="container">
     <div class="row">
       <div class=" col-12">
-        <div class="card featured-card shadow-sm no-border">
+        <div class="card featured-card shadow-sm ">
           <div class="card-body border-card-body">
 <p class="top-card-heading"><i class="fas fa-info-circle"></i>
 	      Outgoing Transactions</p>

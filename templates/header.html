@@ -1,22 +1,39 @@
-<div id="header" class="nav-colored" style="background-color:#414180;border-bottom: 2px solid black;">
-  <div id="rowheader" class="row vertical-center">
+{% load static %}
+<!--Main Navigation-->
+<header>
 
-    <div id="top-brand" class="mr-5 ml-2" style="margin-top:0;"><a href="/">
-      <div class="logo-animated">
-        <img src="/static/img/svg/bidaow.svg" width="130px" height="48px;">
-      </div>
-    </a></div>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" style="background-color:black;">
+    <a class="navbar-brand" href="#"><img src="{%static 'img/svg/bidaow.svg'%}"> <strong>Bidaoscan</strong></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Find</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+     
+      </ul>
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fab fa-github"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-    <div id="right-menu">
-      <div id="search-wrapper" class="float-right" style="background-color: #ffffffb3;">
-        <form autocomplete="off" action="/search_games" method="get" id="search-navbar-form" class="float-right">
-	  <div class="autocomplete" style="width:300px;">
-	    <input id="search-navbar" type="text" placeholder="Search..." name="query">
-	  </div>
-	  <button id="search-navbar-button" type="submit" value="Search" class="button"><i class="fas fa-search"></i></button>
-	</form>
-      </div>
-
-        </div>
-        </div>
-</div>
+</header>
+<!--Main Navigation-->
