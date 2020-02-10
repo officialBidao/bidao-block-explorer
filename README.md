@@ -1,6 +1,6 @@
 ## Bidao Block Explorer
 
-Blockexplorer for the Bidao Blockchain.
+Block Explorer for the Bidao Blockchain.
 
 ## Screenshot
 
