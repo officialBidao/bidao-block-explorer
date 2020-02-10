@@ -1,10 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block content %}
+<div class="content" style="margin-top:120px;">
+    <section id="top-cards">
+  <div class="container">
+    <div class="row">
+      <div class=" col-12">
+        <div class="card featured-card shadow-sm no-border">
+          <div class="card-body border-card-body">
+<p class="top-card-heading"><i class="fas fa-clipboard-check"></i>
+	      General Info 0x854767934678346789246467046246456</p>
+
+              <div>
+                  <div style="margin:auto" class="row">
+                      <div class="col-sm-1">
+                      </div>
+                      <div class="col-sm-6">
+                            <p style="margin-bottom:0;" class="grayed"><b>Address: </b>0x854767934678346789246467046246456</p>
+                          <p style="margin-bottom:0;" class="grayed"><b>Balance: </b>66565.343443bai</p>
+                          <p style="margin-bottom:0;" class="grayed"><b>Last Transaction: </b>February 10, 2020</p>
+                          <p style="margin-bottom:0;" class="grayed"><b>Name: </b>Bidao-Test13</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section id="top-cards" style="margin-top:50px">
+  <div class="container">
+    <div class="row">
+      <div class=" col-12">
+        <div class="card featured-card shadow-sm no-border">
+          <div class="card-body border-card-body">
+<p class="top-card-heading"><i class="fas fa-info-circle"></i>
+	      Incoming Transactions</p>
+
+
+
+              <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Age</th>
+      <th scope="col">From</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">3</th>
+      <td>2020-02-10 13:26:00</td>
+      <td>0x854767934678346789246467046246456</td>
+      <td>200.54345bai</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>2020-02-10 13:26:00</td>
+      <td>0x854767934678346789246467046246456</td>
+      <td>0.544bai</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>2020-02-10 13:26:00</td>
+      <td>0x854767934678346789246467046246456</td>
+      <td>17.567bai</td>
+    </tr>
+  </tbody>
+</table>
+
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section id="top-cards" style="margin-top:20px">
+  <div class="container">
+    <div class="row">
+      <div class=" col-12">
+        <div class="card featured-card shadow-sm no-border">
+          <div class="card-body border-card-body">
+<p class="top-card-heading"><i class="fas fa-info-circle"></i>
+	      Outgoing Transactions</p>
+
+
+
+              <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Age</th>
+      <th scope="col">To</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">3</th>
+      <td>2020-02-10 13:26:00</td>
+      <td>0x854767934678346789246467046246456</td>
+      <td>200.54345bai</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>2020-02-10 13:26:00</td>
+      <td>0x854767934678346789246467046246456</td>
+      <td>0.544bai</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>2020-02-10 13:26:00</td>
+      <td>0x854767934678346789246467046246456</td>
+      <td>17.567bai</td>
+    </tr>
+  </tbody>
+</table>
+
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{% endblock %}
