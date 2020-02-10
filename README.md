@@ -18,4 +18,10 @@ As Settlement Layer the BiDao system utilizes the Binance-chain. This means that
 
 In future, BiDao will be also integrated with other Blockchains like Ethereum, Tezos, andEOS. This way BiDao becomes the one-stop-shop for DecentralizedFinance (Defi) applications.
 
+## Links
+
+[Homepage](https://bidaochain.com/)
+
+[Whitepaper](https://bidaochain.com/static/docs/whitepaperBidao.pdf)
+
 
