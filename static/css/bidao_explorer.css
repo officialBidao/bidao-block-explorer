@@ -1,4 +1,3 @@
-
 ul {
   margin-bottom: 0px !important;
 }
@@ -1258,7 +1257,7 @@ code {
 /* cards */
 .featured-card {
   margin: 0 auto;
-  border-radius: 0px !important;
+  border-radius: 10px !important;
 }
 .guide-card {
   margin: 0 auto;
@@ -1271,8 +1270,6 @@ code {
   }
 }
 .border-card-body {
-  border-radius: 0rem;
-  border: 1px solid #dae1e9;
 }
 .border-card-body-w-img {
   border-top-left-radius: 0px;
