@@ -6,7 +6,7 @@ Official block explorer for the Bidao Blockchain.
 
 <div align="center">
 
-<img width="60%" src="https://github.com/meik99-tech/bidao-block-explorer/blob/master/images/screenshot.png?raw=true">
+<img width="60%" src="https://github.com/meik99-tech/bidao-block-explorer/blob/master/images/ 	Screenshot from 2020-02-10 16-26-53.png?raw=true">
   
 </div>
 
