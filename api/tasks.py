@@ -95,7 +95,6 @@ def update_global_data():
     data = response.json()
     globaldata = Global.objects.all()[0]
     coins = Crypto.objects.all().filter(type='s')
-    print('here global')
     stakedcap = 0
     capofallstakingcoins = 0
     for c in coins:
@@ -104,7 +103,6 @@ def update_global_data():
         stakedcap = stakedcap + c.info['staked'] * c.price
         print('here again')
 
-    print('here again')
     globaldata.marketcap = data['data']['total_market_cap']['usd']
     globaldata.vol = data['data']['total_volume']['usd']
 
@@ -137,19 +135,16 @@ def update_global_histories():
     h.stakedcap.append(float(g.stakedcap))
     ts = calendar.timegm(time.gmtime())
     h.date.append(ts)
-    print('here')
     h.save()
 
 def update_crypto_histories(symbol):
     h = History.objects.get(symbol=symbol)
     c = Crypto.objects.get(symbol=symbol)
     h.price.append(float(c.price))
-    print(float(c.price))
     h.vol.append(float(c.vol))
     h.marketcap.append(float(c.price * c.circ_supply))
     ts = calendar.timegm(time.gmtime())
     h.date.append(ts)
-    print('here')
     h.save()
 
 def update_asset_histories(symbol):
@@ -157,9 +152,6 @@ def update_asset_histories(symbol):
     c = Asset.objects.get(symbol=symbol)
     h.price.append(float(c.price))
     price = c.price
-    if symbol == 'GOLD':
-        price = float(c.price) / 28.3495  #price per gram
-    print(price)
     h.marketcap.append(price * float(c.supply))
     ts = calendar.timegm(time.gmtime())
     h.date.append(ts)
@@ -170,9 +162,7 @@ def update_asset_histories(symbol):
 def update_bitcoin_circ_supply():
      response = requests.get('https://blockchain.info/q/totalbc')
      data = response.text
-     print(data)
      supply = int(data) / 100000000
-     print(supply)
      c = Crypto.objects.get(symbol='BTC')
      c.circ_supply = supply
      c.save()
